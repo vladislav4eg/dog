@@ -1,0 +1,332 @@
+@media only screen and (min-width : 2400px)
+	.stock
+		padding-top: 400px
+
+	.hero
+		padding-bottom: 650px
+
+@media only screen and (max-width : 2400px)
+	.stock
+		padding-top: 300px
+
+@media only screen and (max-width : 1200px)
+
+	.header
+		&__logo
+			img
+				width: 150px
+
+		.btn
+			max-width: 200px
+	
+
+	.hero
+		padding-bottom: 60px
+		ul
+			width: 60%
+
+	.image
+		padding-top: 20px
+
+	.section-form__bg
+		right: 0
+
+	.stock
+		background-position: center left
+	
+	.solution
+		img
+			width: 220px
+			height: 220px
+
+		&__number
+			top: 75px
+
+	.footer
+		&__logo
+			img
+				width: 150px
+
+	.benefits__item_active
+		padding: 10px
+
+
+	.flip-clock-wrapper
+		width: 100%
+
+
+@media only screen and (max-width : 992px)
+	
+	.header__container
+		padding-right: 70px
+
+	.nav
+		position: fixed
+		display: block
+		width: 320px
+		height: 100%
+		flex-direction: column
+		right: -100%
+		top: 60px
+		z-index: -1
+		background: rgba(255, 255, 255, .95)
+		transition: all .6s
+
+		ul
+			display: flex
+			flex-direction: column
+			justify-content: center
+			margin: 40px
+
+		li
+			margin: 0
+			margin-bottom: 10px
+
+		a
+			color: $text
+			font-weight: 600
+		
+		&--active
+			right: 0
+
+	.hamburger
+		display: block
+	
+	.hero
+		padding-bottom: 40px
+	
+	h2
+		font-size: 28px
+		margin-bottom: 40px
+
+		img
+			width: 200px
+	.order
+		h3, h4
+			font-size: 28px
+
+	.benefits__item
+		margin-bottom: 15px
+		width: 47%
+
+
+
+	.stock
+		padding: 40px 0
+		background-image: none
+		background-color: $green
+
+		h3
+			font-size: 28px
+
+	.about iframe
+		height: 300px
+
+	.solution
+		img
+			width: 160px
+			height: 160px
+			margin-bottom: 20px
+
+		&__number
+			top: 40px
+			font-size: 40px
+
+
+	.order
+		&__list
+			flex-wrap: wrap
+			margin-bottom: 15px
+
+			&::before
+				display: none
+
+			p
+				&::before
+					display: none
+
+		&__item
+			width: 47%
+			margin-bottom: 15px
+
+			img
+				margin-bottom: 20px
+
+	.section-form__bg
+		width: 95%
+		right: auto
+		left: 0
+
+	.footer__info
+		margin-right: 0
+		padding-left: 0
+		padding-right: 0
+
+		p
+			padding-left: 30px
+			img
+				margin-left: 0
+
+		img
+			margin-left: 10px
+			width: 25px
+
+	.about, .solution, .gallery, .reviews, .order
+		padding: 40px 0
+
+
+@media only screen and (max-width : 767px)
+	.flip-clock-wrapper
+		width: 51%
+
+	.stock__white
+		margin-top: 20px
+
+	.hero
+		padding: 100px 0 40px
+
+		p
+			font-size: 18px
+
+		ul
+			margin: 20px auto
+			width: 70%
+
+	h1
+		font-size: 36px
+
+		img
+			width: 220px
+	
+	h2
+		margin-bottom: 15px
+		img
+			width: 150px
+
+	.benefits__item
+		width: 48%
+	
+	.about
+		p, img
+			display: none
+
+
+	.stock
+		padding-bottom: 40px
+	
+	.solution
+		&__list
+			justify-content: space-around
+
+		&__item
+			margin-bottom: 15px
+
+
+	.section-form
+		&__bg
+			display: none
+
+		.form
+			padding-bottom: 30px
+
+			div:last-child
+				margin-top: 0
+
+		p
+			margin-bottom: 15px
+
+	.footer__info
+		flex-direction: column
+
+		p,
+		div
+			margin-bottom: 15px
+
+
+@media only screen and (max-width : 576px)
+	.flip-clock-wrapper
+		width: 60%
+
+@media only screen and (max-width : 480px)
+	.modal
+		max-width: 290px
+
+	.flip-clock-wrapper
+		width: 80%
+
+	h2,
+	.order h3,
+	.order h4
+		font-size: 22px
+
+	.header
+		.btn
+			display: none
+	.hero ul
+		width: 100%
+
+	.benefits__item
+		width: 100%
+
+	.reviews
+		&__slide
+			padding: 15px
+
+		p
+			margin-bottom: 20px
+
+		&__decor
+			margin-bottom: 10px
+
+
+	.order__item
+		width: 100%
+
+	.section-form .form
+		padding: 15px
+
+	.footer
+		&__logo
+			margin-right: 0
+			margin-bottom: 15px
+
+		&__copy
+			flex-direction: column
+			text-align: center
+
+	.nav
+		top: 53px
+
+		.btn
+			display: block
+			margin: 0 40px
+
+	.gallery
+		&__slider
+			padding-bottom: 20px
+
+		&__slide
+			a
+				width: 320px
+				height: 320px
+
+		.slick-track
+			height: 320px
+
+	.reviews__slider
+		padding-bottom: 20px
+
+	.stock__sub-title
+		br
+			display: block
+
+	
+	.about
+		iframe
+			height: 260px
+
+
+@media only screen and (max-width : 360px)
+	.flip-clock-wrapper
+		width: 100%
+

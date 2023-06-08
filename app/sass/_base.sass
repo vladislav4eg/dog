@@ -1,0 +1,147 @@
+@import "fonts"
+
+
+//----------------------fonts---------------------
+$fonts: 'Montserrat', sans-serif
+$fonts-title: 'Croogla4F', sans-serif
+//---------------------end-fonts---------------------
+
+//----------------------color---------------------
+$accent: #e9b5dd
+$text: #06143a
+$green: #368e98
+
+//---------------------end-color---------------------
+
+body
+	overflow-x: hidden
+	position: relative
+	min-width: 320px
+	font-family: $fonts
+	font-size: 14px
+	color: $text
+	line-height: 1.4
+	font-weight: 400
+
+::selection
+	background-color: $accent
+	color: #fff
+
+a, div, ul, li, input, textarea
+	&:hover,
+	&:focus
+		outline: none
+
+h1, h2, h3, h4, h5, h6
+	position: relative
+	line-height: 1.4
+	margin: 0
+	padding: 0
+	font-family: $fonts-title
+
+h1
+	font-size: 48px
+	font-weight: 400
+	position: relative
+	padding: 3px 0
+	margin-bottom: 25px
+
+	&::before,
+	&::after
+		content: ''
+		position: absolute
+		right: 0
+		left: 0
+		width: 100%
+		height: 1px
+		background: $accent
+
+	&::before
+		top: 0
+
+	&::after
+		bottom: 0
+
+section
+	overflow: hidden
+
+h2
+	font-size: 36px
+	text-align: center
+	padding-bottom: 5px
+	margin-bottom: 75px
+	font-weight: 400
+
+	&::before
+		content: ''
+		position: absolute
+		bottom: 0
+		right: 0
+		left: 0
+		margin: 0 auto
+		width: 170px
+		height: 1px
+		background-color: $green
+
+	img
+		width: 280px
+
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+i
+	font-style: normal
+	font-size: 16px
+	color: #fff
+
+input, textarea
+	border: 1px solid #d7d7d7
+	outline: none
+	box-shadow: none
+	-webkit-appearance: none
+	color: $text
+	transition: all .3s
+	height: 50px
+	max-width: 300px
+	width: 100%
+	padding: 0 25px
+	border-radius: 5px
+	
+	&:focus:required:invalid
+		border-color: $green
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+
+	&:required:valid
+		border-color: $green
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+
+	&::placeholder
+		color: #cfcfcf
+		font-size: 16px
+		line-height: 50px
+
+b, strong
+	font-weight: 700
+
+p
+	margin: 0
+	padding: 0
+
+a,
+a:focus,
+a:hover
+	outline: none
+	text-decoration: none
+
+@import "_base/preloader"
+@import "_base/animation"
+@import "_base/btn"
+@import "_base/form"
+@import "_base/modal"
+@import "_base/hamburger"

@@ -1,0 +1,41 @@
+.btn
+	position: relative
+	display: inline-block
+	height: 50px
+	max-width: 300px
+	width: 100%
+	border: none
+	outline: none
+	border-radius: 4px
+	background: $accent
+	text-align: center
+	text-transform: uppercase
+	color: #fff
+	line-height: 50px
+	letter-spacing: .2px
+	transition: all .5s
+	font-size: 16px
+	font-weight: 700
+	z-index: 100
+
+	&:hover,
+	&:focus
+		outline: none
+		border: none
+		text-decoration: none
+		cursor: pointer
+		transition: all .3s
+		box-shadow: 0 5px 10px rgba($text, .4)
+		color: #fff
+	
+	&--transparent
+		background-color: transparent
+		color: $text
+		border: 1px	solid $text
+		border-radius: 5px 
+
+		&:hover,
+		&:focus
+			background: $text
+			color: #fff
+			border: 1px	solid $text
